@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Loader{
+            height: 250px;
+            width: 250px;
+            background-color: purple;
+            border-radius: 50%;
+            /* Animation Property */
+            /* animation-name: Loader;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-delay: 2s; */
+
+            animation: Loader 2s ease-in-out 3s infinite alternate;
+        }
+        @keyframes Loader {
+            From{
+                border-radius: 50%;
+                width: 200px;
+            }
+            to{
+                width: 100%;
+                background-color: red;
+                border-radius: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="Loader"></div> 
+</body>
+</html>
